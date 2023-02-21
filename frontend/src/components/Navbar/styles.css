@@ -1,0 +1,10 @@
+.main-nav {
+    padding-left: 18px;
+    padding-top: 20px;
+    height: 68px;
+}
+
+.nav-logo-text, .nav-logo-text:hover {
+    color: #000000;
+}
+
