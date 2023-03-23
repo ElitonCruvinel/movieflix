@@ -1,0 +1,30 @@
+.movie-catalog-container {
+  padding: 15px;
+  color: #FFFFFF;
+}
+
+.movie-catalog-container h1 {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.movie-catalog-container h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 1200px) {
+  .movie-catalog-container {
+    padding: 40px;
+  }
+
+  .movie-catalog-container h1 {
+    font-size: 48px;
+  }
+  
+  .movie-catalog-container h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}

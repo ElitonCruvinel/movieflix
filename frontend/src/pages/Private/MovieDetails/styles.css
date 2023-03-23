@@ -1,0 +1,17 @@
+.container {
+    padding: 20px 10px;
+    color: #FFFFFF;
+}
+
+.container h1 {
+    margin-bottom: 15px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 40px 0px;
+    }
+    .container h1 {
+        margin-bottom: 25px;
+    }
+}
