@@ -7,3 +7,9 @@
     padding: 20px;
   }
 }
+
+@media (min-width: 768px) {
+  .review-card {
+    padding: 40px;
+  }
+}

@@ -1,13 +1,13 @@
-import { useContext, useEffect} from 'react';
+import { useContext, useEffect } from 'react';
 import history from 'util/history';
 import { Link } from 'react-router-dom';
 import { getTokenData, isAuthenticated } from 'util/auth';
 import { removeAuthData } from 'util/storage';
-import './styles.css';
 import { AuthContext } from 'AuthContext';
 
-const Navbar = () => {
+import './styles.css';
 
+const Navbar = () => {
   const { authContextData, setAuthContextData } = useContext(AuthContext);
 
   useEffect(() => {

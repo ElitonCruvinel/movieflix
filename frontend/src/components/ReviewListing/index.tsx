@@ -11,7 +11,12 @@ const ReviewListing = ({ reviews }: Props) => {
   return (
     <div className="base-card review-card">
       {reviews?.map((review) => {
-        return <div key={review.id}> <ReviewCard review={review} /> </div>;
+        return (
+          <div key={review.id}>
+            {' '}
+            <ReviewCard review={review} />{' '}
+          </div>
+        );
       })}
     </div>
   );

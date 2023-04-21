@@ -15,11 +15,10 @@ const ReviewCard = ({ review }: Props) => {
         <span>{review.user.name}</span>
       </div>
       <div className="text-container">
-      <p>{review.text}</p>
+        <p>{review.text}</p>
       </div>
     </div>
   );
 };
 
 export default ReviewCard;
-

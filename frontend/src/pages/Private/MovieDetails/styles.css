@@ -1,17 +1,130 @@
-.container {
-    padding: 20px 10px;
-    color: #FFFFFF;
+.movie-details-container {
+  padding: 20px 10px;
+  color: #ffffff;
 }
 
-.container h1 {
-    margin-bottom: 15px;
+.movie-details-description {
+  background-color: #6c6c6c;
+  padding: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-bottom: 25px;
+  max-width: 1200px;
+}
+
+.movie-details-description h3 {
+  font-size: 20px;
+}
+
+.movie-details-description h4 {
+  font-size: 16px;
+  color: #ffc700;
+}
+
+.movie-details-description h5 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.movie-details-description h6 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9e9e9e;
+}
+
+.movie-details-description-synopsis {
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.movie-details-description-image {
+  margin-bottom: 20px;
+}
+
+.movie-details-description-image img {
+  width: 100%;
+}
+
+.movie-details-review-form {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.movie-details-review-listing {
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .movie-details-container {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .movie-details-container {
+    padding: 40px;
+  }
+
+  .movie-details-description {
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+
+  .movie-details-description h3 {
+    font-size: 36px;
+  }
+
+  .movie-details-description h4 {
+    font-size: 24px;
+  }
+
+  .movie-details-description h5 {
+    font-size: 24px;
+  }
+
+  .movie-details-description h6 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .movie-details-description-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .movie-details-description-image img {
+    width: 608px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .container {
-        padding: 40px 0px;
-    }
-    .container h1 {
-        margin-bottom: 25px;
-    }
+  .movie-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .movie-details-description {
+    display: flex;
+  }
+
+  .movie-details-description-image {
+    margin-bottom: 0;
+    flex: 1;
+  }
+
+  .movie-details-description-image img {
+    width: 100%;
+  }
+
+  .movie-details-description-botton {
+    flex: 1;
+    margin-left: 40px;
+  }
 }

@@ -1,6 +1,7 @@
 .movie-catalog-container {
   padding: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
+  max-width: 1200px;
 }
 
 .movie-catalog-container h1 {
@@ -22,7 +23,7 @@
   .movie-catalog-container h1 {
     font-size: 48px;
   }
-  
+
   .movie-catalog-container h2 {
     font-size: 24px;
     margin-bottom: 30px;

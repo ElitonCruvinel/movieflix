@@ -4,7 +4,9 @@ import { getAuthData } from './storage';
 
 //export const BASE_URL = process.env.REACT_APP_BACKEND_URL ?? 'http://localhost:8080';
 
-export const BASE_URL = process.env.REACT_APP_BACKEND_URL ?? 'https://movieflix-devsuperior.herokuapp.com';
+export const BASE_URL =
+  process.env.REACT_APP_BACKEND_URL ??
+  'https://movieflix-devsuperior.herokuapp.com';
 
 const CLIENT_ID = process.env.REACT_APP_CLIENT_ID ?? 'myclientid';
 const CLIENT_SECRET = process.env.REACT_APP_CLIENT_SECRET ?? 'myclientsecret';
@@ -35,12 +37,12 @@ export const requestBackendLogin = (loginData: LoginData) => {
 };
 
 export const requestBackend = (config: AxiosRequestConfig) => {
-    const headers = config.withCredentials
-      ? {
-          ...config.headers,
-          Authorization: 'Bearer ' + getAuthData().access_token,
-        }
-      : config.headers;
-  
-    return axios({ ...config, baseURL: BASE_URL, headers });
-  };
+  const headers = config.withCredentials
+    ? {
+        ...config.headers,
+        Authorization: 'Bearer ' + getAuthData().access_token,
+      }
+    : config.headers;
+
+  return axios({ ...config, baseURL: BASE_URL, headers });
+};
